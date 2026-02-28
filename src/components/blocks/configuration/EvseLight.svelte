@@ -63,7 +63,7 @@
 					<SliderForm icon="fa6-solid:gauge-high"
 						bind:value={formdata.max_current.val}
 						unit={$_("units.A")}
-						min={$config_store.min_current_hard?$config_store.min_current_hard:6}
+						min={$config_store.min_current_hard?$config_store.min_current_hard:3}
 						max={$config_store.max_current_hard?$config_store.max_current_hard:32}
 						onchange={()=>{ if(false === set_hardware_max) { setProperty("max_current_soft")}}}
 					/>
